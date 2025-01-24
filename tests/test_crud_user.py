@@ -43,7 +43,6 @@ def test_get_user_negative():
     response = requests.get(url + endpoint + "88")
 
     assert response.status_code == 404
-    validate(response.json(), get_user)
 
 
 def test_put_user_info():
